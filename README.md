@@ -1,13 +1,13 @@
-# OAuth Demo by Clyde Balaman
+# OAuth Demo by Danelle Pio
 
 ## Environment
-- [ ] Part 1: Setting up NodeJS environment
-- [ ] Part 2: Authentication Routes
-- [ ] Part 3: Passport Configuration
-- [ ] Part 4: PostgreSQL Store and Retrieve
+- [x] Part 1: Setting up NodeJS environment
+- [x] Part 2: Authentication Routes
+- [x] Part 3: Passport Configuration
+- [x] Part 4: PostgreSQL Store and Retrieve
 
 ## Authentication Strategy
-- [ ] Part 5: Progress Refresh
+- [x] Part 5: Progress Refresh
 - [ ] Part 6: Cookie Session
 - [ ] Part 7: Viewing Profile
 - [ ] Part 8: User Logout
