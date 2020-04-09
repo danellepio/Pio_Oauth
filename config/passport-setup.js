@@ -55,7 +55,5 @@ passport.use(
                             // console.log(res.rows[0]);
                         }
                     });
-
-
     })
 );
