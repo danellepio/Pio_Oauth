@@ -4,17 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Oauth Activity By Clyde Balaman</title>
+    <title>Oauth Activity By Danelle Pio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css" rel="stylesheet">
+    <style>
+        .wrapper a:hover{
+            background-color: #fbeb99;
+        }
+    </style>
 </head>
-<body>
-    
-    <a href="/auth/logout">Logout</a>
-    <br>
-    <a href="/auth/login">Login</a>
-    <br>
-    <a href="/">Homepage</a>
-    <br>
-    <hr>
+<body style="background-color:#c0a78e;text-align:center"></body>
+<body> 
 
+  <div class="wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light navbar fixed-top" style="background-color:#fbebc9;">
+        <div class="container">
+            <a class="navbar-brand">Oauth Activity</a>
+            <span class="navbar-text">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/auth/login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/auth/logout">Logout</a>
+                    </li>
+                </ul>
+            </span>
+        </div>
+    </nav>
+</div>
+
+
+<!--Loader-->
+<div class="se-pre-con">
+    <style>
+    .no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(http://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #f6d9ac;
+}
+</style>
+</div>
+<script>
+    $(window).on("load",function(){
+        setTimeout(function(){
+            $(".se-pre-con").fadeOut("slow");
+        },1000)
+    })
+</script>
 </body>
 </html>

@@ -9,6 +9,10 @@ app.use(passport.initialize());
 // set up view engine
 app.set('view engine', 'ejs');
 
+//initialize passport
+app.use(passport.initialize());
+app.use(passport.session());
+
 // set up routes
 app.use('/auth',authRoutes);
 
