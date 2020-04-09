@@ -4,16 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
+    <title>Oauth Activity By Danelle Pio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css" rel="stylesheet">
 </head>
+<body style="background-color:#c0a78e;text-align:center"></body>
+
 <body>
-    <a href="/auth/logout">Logout</a>
-    <br>
-    <a href="/auth/login">Login</a>
-    <br>
-    <a href="/">Homepage</a>
-    <br>
-    <hr>
-    <a href="/auth/google">Login using Google+</a>
+    <br><br><br>
+<div class="row justify-content-md-center">
+    <div class="col-md-4" style="text-align:center">
+        <hr>
+        <div class="card text-center" style="background-color:#fbebc9; border-radius:20px; font-family:'Open Sans', sans-serif;">
+           <!--unod sa card-->
+            <div class="card-body">
+                <h5 class="card-title" style="font-size:40px; font-family:'Open Sans',sans-serif; ">Sign In</h5>
+                <br/><br/>
+                <hr>
+                <!--<p class="card-text" style="font-weight:bold;">Sign In</p>-->
+                <br/>
+                <form>
+                    <div class="form-group">
+                        <!--<p style="text-align:left; font-size:14px; font-weight:bold;">Username</p>-->
+                        <input type="email" class="form-control" placeholder="Username">
+                        <small id="emailHelp" class="form-text text-muted">Please enter your username.</small>
+                        </div>
+                        <div class="form-group">
+                        <!--<p style="text-align:left; font-size:14px; font-weight:bold;">Password</p>-->
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>  
+                        <p href="#" style="text-align:right; font-size:13px; font-weight:bold;"><a href="#">Forgot account?</a></p>
+                    <button type="submit" class="btn btn-warning" formaction="/auth/login" style="
+                        color: black;
+                        padding: 6px 66px;
+                        text-align: center;
+                        margin: 4px 2px;
+                        font-weight:bold;
+                        border-radius: 16px;">login
+                    </button>
+                </form>
+                <hr>
+                <a href="/auth/google" style="font-weight:bold;">Sign in with Google+</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Loader-->
+<div class="se-pre-con">
+    <style>
+    .no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(http://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #f6d9ac;
+}
+</style>
+</div>
+<script>
+    $(window).on("load",function(){
+        setTimeout(function(){
+            $(".se-pre-con").fadeOut("slow");
+        },1000)
+    })
+</script>
 </body>
 </html>
